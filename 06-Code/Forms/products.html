@@ -18,36 +18,38 @@
                 <caption><b>Periféricos</b></caption>
                 <tr>
                     <td>
-                        <b>Nombre:</b>
+                        <label for="Nombre"> Nombre: </label>
                     </td>
                     <td>
-                        <select>
-                            <option>Seleccione</option>
-                            <option>Mouse Gamer</option>
-                            <option>Mouse</option>
-                            <option>Teclado Gamer</option>
-                            <option>Teclado</option>
+                        <select name="nombre" id="Nombre" required>
+                            <option ></option>
+                            <option value="1">Mouse Gamer</option>
+                            <option value="2">Mouse</option>
+                            <option value="3">Teclado Gamer</option>
+                            <option value="4">Teclado</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <b>Código:</b>
+                        <label for="Codigo"> Codigo: </label>
                     </td>
-                    <td><input type="text" name="code" id="code"></td>
+                    <td><input type="code" name="code" placeholder="PER001" minlength="4" maxlength="5" required pattern="[A-Z-0-9]+"></td>
+
                 </tr>
                 <tr>
                     <td>
-                        <b>Color:</b>
+                        <label for="Color"> Color: </label>
                     </td>
                     <td>
-                        <select>
-                            <option>Seleccione</option>
-                            <option>Negro</option>
-                            <option>Gris</option>
-                            <option>Blanco</option>
+                        <select name="color" id="Color" required>
+                            <option ></option>
+                            <option value="1">Negro</option>
+                            <option value="2">Gris</option>
+                            <option value="3">Blanco</option>
                         </select>
                     </td>
+
                 </tr>
                 <tr>
                     <td>
@@ -59,21 +61,20 @@
                     <td>
                         <b>Cantidad:</b>
                     </td>
-                    <td><input type="text" name="cant" id="cant"></td>
+                    <td><input type="cantidad" name="cantidad" placeholder="Ingrese cantidad"  required pattern="[1-9]{4}"></td>
                 </tr>
 
                 <tr>
                     <td>
                         <b>Precio:</b>
                     </td>
-                    <td><input type="text" name="precio" id="precio"></td>
+                    <td><input type="Precio" name="precio" placeholder="Ingrese el precio 000.00"  required pattern="[1-9]+.[1-9]{2}"></td>
                 </tr>
 
                 <tr>
                     <td>
                         <center>
-                            <input type="Enviar" value="Enviar">
-                            <input type="reset" value="Reset">
+                            <button>Submit</button>
                         </center>
                     </td>
                 </tr>
