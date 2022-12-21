@@ -3,21 +3,109 @@
 
 <head>
     <title> PRODUCTOS</title>
+    <style>
+        body {
+            background-color: rgb(211, 226, 226);
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            color: rgb(15, 15, 15);
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        header {
+            background: rgb(23, 24, 24);
+            color: rgb(48, 32, 13);
+            height: 80px;
+        }
+        #regresar {
+            color: rgb(233, 233, 228);
+
+        }
+        img {
+            height: auto;
+            width: 11.6%;
+        }
+        h1{
+            font-size: 2.3em;
+            line-height: 1.3em;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: 300;
+        }
+        nav {
+            float: right;
+        }
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                padding-right: 20px;
+            }
+            
+                nav ul li {
+                    display: inline-block;
+                    line-height: 80px;
+                }
+                    
+                    nav ul li a {
+                        display: block;
+                        padding: 0 10px;
+                        text-decoration: none;
+                    }
+                    
+                        nav ul li a:hover {
+                            background: #0b76a6;
+                        }
+        table{
+            border: 5px;
+        }
+        table tr{
+            background: rgb(70, 119, 184);
+            border: 100px;
+            width: max-content;
+        }
+        table td{
+            background-color: rgb(109, 146, 201);
+            border: 100px;
+            width: 100px;
+        }
+        th{
+            color: rgb(12, 12, 12);
+        }
+    </style>
 </head>
 
 <body>
-    <a href="../index.html">Regresar</a>
+    <header id="main-header">
+        <!--<a id="regresar" href="../index.html">Regresar</a>-->
+        <a>
+            <img src="../images/logo.jpg">
+            <!--<span> <b>Compuequipa</b></span>-->
+        </a>
+        <nav>
+			<ul>
+				<li><a id="regresar" href="../index.html">Inicio</a></li>
+				<!--<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Contacto</a></li>-->
+                <li><a id="regresar" href="../Forms/products.html">Registrar Nuevo Producto</a></li>
+			</ul>
+		</nav><!-- / nav -->
+    </header>
+    <div>
     <h1>
         <center><b>Compuequipa</b></center>
     </h1>
-    <center><img src="../images/accessories.jpg" width="10%" </center>
+</div>
+    <center><img id="accesories" src="../images/accessories.jpg" width="10%" </center>
         <center>
-            <table border="5px" ; cellpadding="5" ; cellspacing="0" ;width="100%">
-                <a href="../Forms/products.html">
+            <div>
+            <table>
+                <!--<a href="../Forms/products.html">
                     <h2><b>Registrar Nuevo Producto</b></h2>
-                </a>
+                </a>-->
                 <caption align="top"><b>Productos Disponibles</b></caption>
-                <tr bgcolor="bluesky">
+                <tr>
                     <th rowspan="1"></th>
                     <th>Código del Producto</th>
                     <th>Nombre del Producto</th>
@@ -27,7 +115,7 @@
                     <th>Precio</th>
                 </tr>
                 <tr>
-                    <th rowspan="3" bgcolor="bluesky">HUB</th>
+                    <th rowspan="3">HUB</th>
                     <td>P001</td>
                     <td>Adaptadpr USB C</td>
                     <td>Meanhigh</td>
@@ -52,7 +140,7 @@
                     <td>$13.99</td>
                 </tr>
                 <tr>
-                    <th rowspan="4" bgcolor="bluesky">Mouse</th>
+                    <th rowspan="4">Mouse</th>
                     <td>P004</td>
                     <td>Mouse</td>
                     <td>Quasad</td>
@@ -85,7 +173,7 @@
                     <td>$7.99</td>
                 </tr>
                 <tr>
-                    <th rowspan="3" bgcolor="bluesky">Teclado</th>
+                    <th rowspan="3">Teclado</th>
                     <td>P008</td>
                     <td>Teclado</td>
                     <td>HP</td>
@@ -110,6 +198,7 @@
                     <td>$17.49</td>
                 </tr>
             </table>
+        </div>
         </center>
         <br>
 </body>
