@@ -9,65 +9,87 @@
                 background-color: rgb(204, 207, 240);
             }
 
-            a {
-                outline: none;
+            header {
+                background: rgb(23, 24, 24);
+                color: rgb(48, 32, 13);
+                height: 80px;
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+
+            h1 {
+                font-size: 2.3em;
+                line-height: 1.3em;
+                margin: 15px 0;
+                text-align: center;
+                font-weight: 300;
+            }
+
+            nav {
+                float: right;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                padding-right: 20px;
+            }
+
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0 10px;
                 text-decoration: none;
-                padding: 2px 1px 0;
+                color: white;
             }
 
-            a:link {
-                color: #0c0c0c;
+            nav ul li a:hover {
+                background: #0b76a6;
             }
 
-            a:visited {
-                color: #0c0c0c;
+            #main-footer {
+                background: rgb(23, 24, 24);
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
             }
 
-            a:focus {
-                border-bottom: 1px solid;
-                background: #563ba5;
+            #main-footer p {
+                margin: 0;
             }
 
-            a:hover {
-                border-bottom: 1px solid;
-                background: #fbfbfc;
-            }
-
-            a:active {
-                background: #f5f6f4;
-                color: #f8f9f8;
+            #main-footer a {
+                color: white;
             }
         </style>
     </head>
 
     <body>
-        <a href="../index.html">Regresar</a>
+        <header id="main-header">
+            <!--<a id="regresar" href="../index.html">Regresar</a>-->
+            <a>
+                <img src="../images/logo.jpg">
+                <!--<span> <b>Compuequipa</b></span>-->
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="regresar" href="../index.html">Inicio</a></li>
+                    <li><a id="regresar" href="../Forms/formComputadoras.html">Adquiere tu Computador</a></li>
+                    
+            </nav><!-- / nav -->
+        </header>
+        <center><h1>COMPUTADORAS</h1></center>
+        
         <table>
-            <center>
-                <tr>
-                    <td colspan="2">
-                        <img src="../images/logo.jpg" width="100" height="100">
-                    </td>
-
-                    <td colspan="5">
-                        <center>
-                            <h1>
-                                <b>COMPUTADORES</b>
-                            </h1>
-                        </center>
-
-                    </td>
-
-                    <td colspan="2">
-
-
-                        <a href="../Forms/formComputadoras.html">Adquiere tu Computadora</a>
-
-
-                    </td>
-                </tr>
-            </center>
-
 
             <tr style="background-color: rgb(101, 122, 199); width: 1450px; height: 80px;">
 
