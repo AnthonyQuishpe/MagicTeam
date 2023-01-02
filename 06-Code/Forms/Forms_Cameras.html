@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
-    <title>
-        Forms 
-    </title>
+    <a href="../index.html">Regresar</a>
+    <meta charset="UTF-8">
+        <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+        <link href="Styles_cameras.css" rel="stylesheet" type="text/css"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Security Cameras Form</title>
+        
     <style>
         body {
-            background-color: rgb(245, 231, 216);
+            background-color: rgb(247, 238, 228);
         }
     </style>
 </head>
 
 <body>
-    <a href="../index.html">Regresar</a>
+    <section class="form-security-cameras">
+    
     <h1>
-        <center><b><i>Cámaras de Seguridad</i></b></center>
+        <center><b><i><label style="color: #131212;" for="">Cámaras de Seguridad</label></i></b></center>
     </h1>
-    <center><img src="../images/logo.jpg" width="10%"></center>
+    
     <form>
          <center><table>
-            <br><caption style="color: #2110b8;"> Marcas a seleccionar:</caption>
             <tr>
                 <td>
-                    <label style="color: #c43e27;" for="">Marcas</label><br>
+                    <br><label style="color: #111111;" for="">Marcas</label><br>
                 </td>
 
                 <td>
-                    <label for="Hikvision">Hikvision<input type="radio" name="brands" value="Hikvision"> </label> <br>
+                    <br><label for="Hikvision">Hikvision<input type="radio" name="brands" value="Hikvision"> </label> <br>
                     <label for="HiLook">HiLook<input type="radio" name="brands" value="HiLook"> </label> <br>
 
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label  style="color: #d85534;" for="">Productos</label><br>
+                    <label  style="color: #0e0d0d;" for="">Productos</label><br>
                 </td>
                 <td>
 
-                    <input type="checkbox" id="Tipo1" name="Producto1" value="SFixed Dome Camera">
+                    <br><input type="checkbox" id="Tipo1" name="Producto1" value="SFixed Dome Camera">
                     <label for="Tipo1">Cámara Domo Fija</label><br>
                     <input type="checkbox" id="Tipo2" name="Producto2" value=" Varifocal Dome Network Camera ">
                     <label for="Tipo2">Cámara de Red Domo Varifocal</label><br>
@@ -53,38 +57,39 @@
                     <input type="checkbox" id="Tipo7" name=" Producto7" value="Fixed Mini Tube Network Camera">
                     <label for="Tipo7">Cámara de Red Mini Tubo Fija </label><br>
                 </td>
+                <tr>
+                    <td>
+                        <br><label for=""> Cantidad a seleccionar: </label><br>
+                    </td>
+                    <td>
+                        <br><input type="number" name="amount" id="amount" class="required amount"><br>
+        
+                    </td>
+                </tr>
+        
+
             <tr>
                 <td>
-                    <label for=""> Cantidad a seleccionar: </label><br>
+                    <br><label for="date"> Fecha de Registro: </label><br>
                 </td>
                 <td>
-                    <input type="number" name="phone" id="phone" class="required phone"><br>
-
+                    <br><input type="date" name="date_control">
                 </td>
             </tr>
-
             <tr>
                 <td>
-                    <label for="date"> Fecha de Registro: </label><br>
+                    <br><label for=""> E-mail: </label><br>
                 </td>
                 <td>
-                    <input type="date" name="date_control">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for=""> E-mail: </label><br>
-                </td>
-                <td>
-                    <input type="email" name="email" id="email" class="required email"
+                    <br><input type="Email" name="email" id="email" class="required email"
                         title="Ingrese su direcci&oacute;n de correo electr&oacute;nico" required><br>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <input style="color: #2110b8;" type="submit" value="Enviar" name="envio">
-                    <input style="color: #2110b8;"type="reset">
+                    <center><br><input style="color: #2110b8;" type="submit" value="Enviar" name="envio">
+                    <input style="color: #2110b8;"type="reset"> </center>
                 </td>
             </tr>
         </table></center>
