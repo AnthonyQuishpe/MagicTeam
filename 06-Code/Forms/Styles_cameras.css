@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: borde-box
 }
+body{
+  background-image: url(../images/security.jfif);
+  }
 
 .form-security-cameras{
     width: 400px;
