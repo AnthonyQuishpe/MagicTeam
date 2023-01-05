@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(236, 226, 165);
+    background-color: rgb(211, 226, 226);
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -58,18 +58,26 @@ nav ul li a:hover {
     background: #0b76a6;
 }
 
-#main-footer {
-    background: rgb(23, 24, 24);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+table {
+    border: 5px;
 }
 
-#main-footer p {
-    margin: 0;
+table tr {
+    background: rgb(70, 119, 184);
+    border: 100px;
+    width: max-content;
 }
 
-#main-footer a {
-    color: white;
+table td {
+    background-color: rgb(109, 146, 201);
+    border: 100px;
+    width: 100px;
+}
+
+th {
+    color: rgb(12, 12, 12);
+}
+
+#accesories {
+    width: 100px;
 }
