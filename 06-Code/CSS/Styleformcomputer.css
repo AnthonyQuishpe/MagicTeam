@@ -1,0 +1,12 @@
+/*Created on: Jan 01,2023, 10:43:52 AM
+Autor: Ivonne Jacome
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/fondocompu.jpg);
+    background-size: cover;
+}
