@@ -2,106 +2,68 @@
 <hmtl>
 
     <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+        <link href="../CSS/Stylesscliente.css" rel="stylesheet" type="text/css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Forms Servicio Tecnico</title>
     </head>
 
     <body>
-        <a href="../index.html">Regresar</a>
-        <h1>
-            <center>
-                Servicio Técnico
-            </center>
-        </h1>
-        <hr size="5">
+        <header id="main-header">
+            <a>
+                <img src="../images/logo.jpg">
 
-        <center>
-            <form method="get">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="">Ya es cliente</label><br>
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="regresar" href="../index.html">Inicio</a></li>
+            </nav>
+        </header>
+        <section class="form_servicio_tecnico">
+            <h4>Servicio Tecnico</h4>
+            <div>
+                <center><label>Ya es cliente</label> <br>
+                    No <input type="radio" id="no" name="cliente" value="No" checked>
+                    Si<input type="radio" id="si" name="cliente" value="Si"> <br> <br></center>
+            </div>
+            <div>
+                Cedula de Identidad:<input class="controls" type="text" id="txtId" name="txtId"
+                    placeholder="Ingerese su Cedula">
+            </div>
+            <div>
+                Nombre Completo:<input class="controls" type="text" id="txtfullName" name="txtfullName"
+                    placeholder="Ingrese su Nombre">
+            </div>
+            <div>
+                Correo Electrónico:<input class="controls" type="text" id="txtemail" name="E-mail"
+                    placeholder="users@example.com">
+            </div>
+            <div>
+                Fecha:<input class="controls" type="date" id="txtDate" name="Date">
+            </div>
+            <div>
+                Ubicación:
 
-                            <input type="radio" id="no" name="cliente" value="No" checked>
-                            <label for="no">No</label>
+                <select id="location" name="location">
+                    <option value"Carcelen">Carcelen</option>
+                    <option value"Inca">Inca</option>
+                    <option value"Guamani">Guamani</option>
+                    <option value"Ecuatoriana">Ecuatoriana</option>
 
-                            <input type="radio" id="si" name="cliente" value="Si">
-                            <label for="si">Si</label>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <table>
-                    <tr>
-                        <td>
-                            <label for="id">Cédula de Identidad:</label>
-                            <input type="text" id="txtId" name="txtId">
-                        </td>
-                </table><br>
-
-                <table>
-                    <tr>
-                        <td>
-                            <label for="txtfullName">Nombre Completo:</label>
-                            <input type="text" id="txtfullName" name="txtfullName">
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="txtemail">Correo Electrónico:</label>
-                            <input type="text" id="txtemail" name="E-mail">
-                        </td>
-                    </tr>
-                </table><br>
-
-                <table>
-                    <tr>
-                        <td>
-                            <label for="txtDate">Fecha:</label>
-                            <input type="date" id="txtDate" name="Date">
-                        </td>
-                    </tr>
-                </table>
-
-                <table>
-                    <br>
-                    <tr>
-
-                        <td>
-                            <label for="txtlocation">Ubicación</label>
-
-                            <select id="location" name="location">
-                                <option value"Carcelen">Carcelen</option>
-                                <option value"Inca">Inca</option>
-                                <option value"Guamani">Guamani</option>
-                                <option value"Ecuatoriana">Ecuatoriana</option>
-
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-
-                <br>
-
-                <table>
-                    <tr>
-                        <td>
-                            <label for="txtdescription">Descripción:</label><br>
-                            <textarea name="description" id="descripcion" rows="6" cols="60"></textarea>
-                        </td>
-                    </tr>
-
-                </table>
-            </form>
-
-            <input type="submit" value="Enviar">
-            <input type="reset">
-
-            <hr size="5">
-        </center>
+                </select>
+            </div>
+            <div>
+                Descripción:<textarea class="controls" name="description" id="descripcion"
+                    placeholder="¿Cual es el problema?" style="height:200px"></textarea></textarea>
+            </div>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Enviar"> <input class="button" type="reset"
+                        value="Reset">
+                </center> <br>
+            </div>
+        </section>
 
     </body>
 </hmtl>
