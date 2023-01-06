@@ -2,97 +2,66 @@
 <html>
 
 <head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+    <link href="../CSS/StyleFormProducts.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Peripherals</title>
-    <style>
-        body {
-            background-color: rgb(119, 133, 150);
-            margin: 0;
-            padding: 0;
-            font-family: Helvetica, Arial, sans-serif;
-            color: rgb(15, 15, 15);
-            font-size: 1em;
-            line-height: 1.5em;
-        }
-    </style>
 </head>
 
 <body>
-    <a href="../html/productos.html">Regresar</a>
-    <h1>
-        <center><b><i>FORMULARIO DE PERIFÉRICOS</i></b></center>
-    </h1>
-    <center>
+    <header id="main-header">
+        <a>
+            <img src="../images/logo.jpg">
+        </a>
+        <nav>
+            <ul>
+            <li><a id="regresar" href="../index.html">Inicio</a></li>
+            <li><a id="regresar" href="../html/productos.html">Perifericos</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="form_perifericos">
+        <h4>
+            Adquiere tu producto
+        </h4>
         <form method="get">
-            <hr size="5">
-
-            <table>
-                <caption><b>Periféricos</b></caption>
-                <tr>
-                    <td>
-                        <label for="Nombre"> Nombre: </label>
-                    </td>
-                    <td>
-                        <select name="nombre" id="Nombre" required>
-                            <option ></option>
-                            <option value="1">Mouse Gamer</option>
-                            <option value="2">Mouse</option>
-                            <option value="3">Teclado Gamer</option>
-                            <option value="4">Teclado</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Codigo"> Codigo: </label>
-                    </td>
-                    <td><input type="code" name="code" placeholder="PER001" minlength="4" maxlength="5" required pattern="[A-Z-0-9]+"></td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Color"> Color: </label>
-                    </td>
-                    <td>
-                        <select name="color" id="Color" required>
-                            <option ></option>
-                            <option value="1">Negro</option>
-                            <option value="2">Gris</option>
-                            <option value="3">Blanco</option>
-                        </select>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <b>Fecha de registro:</b>
-                    </td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>Cantidad:</b>
-                    </td>
-                    <td><input type="cantidad" name="cantidad" placeholder="Ingrese cantidad"  required pattern="[1-9]{4}"></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <b>Precio:</b>
-                    </td>
-                    <td><input type="Precio" name="precio" placeholder="Ingrese el precio 000.00"  required pattern="[1-9]+.[1-9]{2}"></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <center>
-                            <button>Submit</button>
-                        </center>
-                    </td>
-                </tr>
-            </table>
-
+            <div>
+                Codigo del Producto:<input class="controls" type="text" name="code" id="code"
+                    placeholder="Ingrese codigo">
+            </div>
+            <div>
+                Marca:
+                <select id="marca" name="marca">
+                    <option value"opcion">Seleccione</option>
+                    <option value"Mouse">Mouse Gamer</option>
+                    <option value"Mouse">Mouse</option>
+                    <option value"Teclado">Teclado Gamer</option>
+                    <option value"Teclado">Teclado </option>
+                </select>
+            </div>
+            <div>
+                Color:
+                <select id="color" name="color">
+                    <option value"opcion">Seleccione</option>
+                    <option value"Negro">Negro</option>
+                    <option value"Gris">Gris</option>
+                    <option value"Blanco">Blanco</option>
+                </select>
+            </div>
+            <div>
+                Cantidad:<input class="controls" type="text" name="code" id="code" placeholder="Ingrese Cantidad">
+                Precio:<input class="controls" type="text" name="precio" id="precio" placeholder="Ingrese el precio">
+            </div>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Enviar"> <input class="button" type="reset"
+                        value="Reset">
+                </center> <br>
+            </div>
         </form>
-    </center>
+        </center>
+    </section>
 </body>
 
 </html>
